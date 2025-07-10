@@ -1,0 +1,345 @@
+/* Mobile Menu Hamburguesa */
+.mobile-menu {
+    position: fixed;
+    top: 80px;
+    right: -100%;
+    width: 250px;
+    height: auto;
+    max-height: 70vh;
+    background: var(--light);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem 0 0 1rem;
+    transition: right 0.15s ease;
+    z-index: 1000;
+    padding: 1.5rem;
+    overflow-y: auto;
+}
+
+.mobile-menu.active {
+    right: 0;
+}
+
+.mobile-menu-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.mobile-nav-link {
+    color: var(--dark);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    transition: all 0.15s ease;
+}
+
+.mobile-nav-link:hover {
+    background-color: var(--violet);
+    color: var(--light);
+    transform: translateX(10px);
+}
+
+.mobile-dropdown {
+    margin: 0.5rem 0;
+}
+
+.mobile-dropdown-button {
+    width: 100%;
+    background: none;
+    border: none;
+    color: var(--dark);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    transition: all 0.15s ease;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile-dropdown-button:hover {
+    background-color: var(--violet);
+    color: var(--light);
+    transform: translateX(10px);
+}
+
+.mobile-dropdown-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease;
+    margin-left: 0.5rem;
+}
+
+.mobile-dropdown.active .mobile-dropdown-content {
+    max-height: 300px;
+}
+
+.mobile-dropdown-link {
+    display: block;
+    color: var(--dark);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 0.6rem 0.8rem;
+    margin: 0.3rem 0;
+    border-radius: 0.5rem;
+    transition: all 0.15s ease;
+}
+
+/* Estilos específicos para cada enlace del menú móvil */
+.mobile-dropdown-link[href="leyidentidad.html"]:hover {
+    background-color: var(--rose);
+    color: var(--dark);
+    transform: translateX(5px);
+}
+
+.mobile-dropdown-link[href="leyeducar.html"]:hover {
+    background-color: var(--orange);
+    color: var(--dark);
+    transform: translateX(5px);
+}
+
+.mobile-dropdown-link[href="leyeducacion.html"]:hover {
+    background-color: var(--green);
+    color: var(--dark);
+    transform: translateX(5px);
+}
+
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.15s ease;
+    z-index: 999;
+}
+
+.menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Animación del botón hamburguesa */
+.mobile-menu-button {
+    position: relative;
+    z-index: 1001;
+    transition: all 0.15s ease;
+}
+
+.mobile-menu-button.active {
+    transform: rotate(90deg);
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 900px) {
+    /* Welcome Logo Responsive */
+    .welcome-logo {
+        width: 95%;
+        max-width: 450px;
+        height: auto;
+        margin: 0.5rem 0;
+    }
+    
+    /* Welcome Section Mobile Styles */
+    .welcome-section {
+        padding: 1.5rem;
+    }
+
+    .welcome-container {
+        padding: 0;
+    }
+
+    .welcome-title {
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .welcome-subtitle {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .welcome-content,
+    .welcome-content-justified {
+        font-size: 1rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .welcome-content p,
+    .welcome-content-justified p {
+        margin-bottom: 1rem;
+        line-height: 1.6;
+    }
+
+    .welcome-content .highlight,
+    .welcome-content-justified .highlight {
+        margin-top: 1.5rem;
+        font-size: 1.1rem;
+    }
+
+    /* Footer Mobile Styles */
+    .footer-main,
+    .footer-bottom {
+        text-align: center;
+    }
+    
+    .footer-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .footer-description {
+        margin: 0 auto;
+        text-align: center;
+        max-width: 100%;
+    }
+    
+    .footer-brand {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer-brand-name {
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+
+    .footer-logo {
+        justify-content: center;
+        width: 100%;
+    }
+    
+    /* Theme toggle in mobile footer */
+    .theme-toggle {
+        margin: 0;
+        padding: 0;
+        font-size: 1.2rem;
+        line-height: 1;
+    }
+
+    /* Rainbow Divider Mobile */
+    .rainbow-divider {
+        margin: 1.5rem 0;
+    }
+
+
+    /* Navbar Mobile */
+    .navbar-links {
+        display: none;
+    }
+
+    .mobile-menu-button {
+        display: block;
+    }
+
+    /* Card Styles Mobile */
+    .card {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .card-content {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .card-image-container {
+        width: 100%;
+        margin-top: 0;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-image-container img {
+        width: 100%;
+        height: 450px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media (max-width: 750px) {
+    .card-image-container img {
+        height: 380px;
+    }
+}
+
+@media (max-width: 650px) {
+    .welcome-logo {
+        width: 88%;
+        max-width: 320px;
+    }
+
+    .welcome-title {
+        font-size: 2rem;
+    }
+
+    .welcome-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .card-image-container img {
+        height: 320px;
+    }
+}
+
+@media (max-width: 535px) {
+    .card-image-container img {
+        height: 280px;
+    }
+}
+
+@media (max-width: 480px) {
+    .welcome-logo {
+        width: 85%;
+        max-width: 250px;
+    }
+    
+    .welcome-title {
+        font-size: 1.8rem;
+    }
+
+    .welcome-subtitle {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .welcome-logo {
+        width: 80%;
+        max-width: 200px;
+    }
+    
+    .welcome-title {
+        font-size: 1.6rem;
+    }
+
+    .welcome-subtitle {
+        font-size: 0.9rem;
+    }
+}

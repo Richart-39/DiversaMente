@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiversaMente</title>
+    <link rel="icon" href="img/ISO.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="style/stylemedia.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar">
+    <!-- Logo -->
+    <div class="navbar-logo">
+        <a href="index.html">
+        <img src="img/isologotipo.png" alt="isologotipo" class="isologotype">
+        </a>
+    </div>
+    
+    <!-- Navigation Links (Desktop) -->
+    <div class="navbar-links">
+        <a href="index.html" class="nav-link">INICIO</a>
+        <a href="somos.html" class="nav-link">SOMOS</a>
+        
+        <!-- Dropdown Menu -->
+        <div class="dropdown">
+            <button class="nav-link">
+                LEYES <i class="fas fa-chevron-down dropdown-icon"></i>
+            </button>
+            <div class="dropdown-menu">
+                <a href="leyidentidad.html">Ley 26.743 de Identidad de Género</a>
+                <a href="leyeducar.html">Ley 27.234 "Educar en Igualdad"</a>
+                <a href="leyeducacion.html">Ley 26.206 de Educación Nacional</a>
+            </div>
+        </div>
+        
+        <a href="contacto.html" class="nav-link">CONTACTO</a>
+    </div>
+    
+    <!-- Mobile Menu Button -->
+    <button class="mobile-menu-button" id="mobileMenuBtn">
+        <i class="fas fa-bars"></i>
+    </button>
+</nav>
+
+<script src="java.js"></script>
+
+<!-- Mobile Menu -->
+<div class="menu-overlay" id="menuOverlay"></div>
+<div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-links">
+        <a href="index.html" class="mobile-nav-link">INICIO</a>
+        <a href="somos.html" class="mobile-nav-link">SOMOS</a>
+        
+        <div class="mobile-dropdown" id="mobileDropdown">
+            <button class="mobile-dropdown-button" id="mobileDropdownBtn">
+                LEYES <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="mobile-dropdown-content">
+                <a href="leyidentidad.html" class="mobile-dropdown-link">Ley 26.743 de Identidad de Género</a>
+                <a href="leyeducar.html" class="mobile-dropdown-link">Ley 27.234 "Educar en Igualdad"</a>
+                <a href="leyeducacion.html" class="mobile-dropdown-link">Ley 26.206 de Educación Nacional</a>
+            </div>
+        </div>
+        
+        <a href="contacto.html" class="mobile-nav-link">CONTACTO</a>
+    </div>
+</div>
+
+<!-- bienvenida -->
+<div class="welcome-section">
+    <div class="welcome-container">
+        <!-- Título Principal -->
+        <h1 class="welcome-title">
+            Bienvenid@s a
+        </h1>
+            
+            <!-- Logo de presentación -->
+            <img src="img/logo-presentacion.png" alt="isologotipo" class="welcome-logo">
+            
+        <!-- Subtítulo -->
+        <h2 class="welcome-subtitle">
+            Tu espacio seguro de recursos, información y apoyo para nuestra comunidad.
+        </h2>
+        
+        <!-- Divisor Arcoíris -->
+        <div class="rainbow-divider pad"></div>
+        
+        <!-- Mensaje de Bienvenida -->
+        <div class="welcome-content">
+            <p>
+                En <b>DiversaMente</b> celebramos la diversidad y promovemos la inclusión. 
+                Aquí encontrarás recursos, información actualizada y ayuda para que puedas conocer tus
+                derechos, desde tu educación hasta tu formación como profesinal.
+            </p>
+            <p class="highlight">
+                <em>"Ser tú mismo no es un privilegio, es un derecho humano universal."</em>
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Rainbow Divider -->
+<div class="rainbow-divider"></div>
+
+<!-- Cards Section -->
+<div class="cards-section">
+    <div class="cards-container">
+        <!-- Card 1 -->
+        <div class="card">
+            <div class="card-content">
+                <h2 class="card-title" style="color: var(--rose);">¿Qué es la Identidad de Género?</h2>
+                <p class="card-text">La identidad de género <strong> es la vivencia interna e individual que cada persona tiene respecto de su propio género </strong>,
+                    la cual puede corresponder o no con el sexo asignado al nacer. Esta auto percepción puede expresarse mediante la forma de vestir,
+                    hablar, comportarse o mediante intervenciones corporales, y debe ser respetada en todos los ámbitos de la vida social.
+                    Según la <strong>Ley Nacional 26.743</strong>, toda persona tiene derecho al reconocimiento de su identidad de género auto percibida,
+                    así como a recibir un trato acorde a ella, sin necesidad de realizar intervenciones médicas ni contar con un diagnóstico previo.
+                    <br><br> <strong><u> PARA MÁS INFORMACIÓN VE A NUESTRA SECCION DE LEYES </u></strong>
+                </p>
+            </div>
+            <div class="card-image-container">
+                <img src="img/identidad.png" alt="Identidad" class="card-image">
+            </div>
+        </div>
+        
+        <!-- Card 2 -->
+        <div class="card">
+            <div class="card-content">
+                <h2 class="card-title" style="color: var(--blue);">¿Qué es la Orientación Sexual?</h2>
+                <p class="card-text">La orientación sexual refiere a la <strong> atracción emocional, afectiva y/o sexual que una persona puede sentir por otra </strong>. Esta puede ser
+                    hacia personas del mismo género (homosexualidad), del género opuesto (heterosexualidad), de más de un género (bisexualidad), o no
+                    sentir atracción sexual (asexualidad), atracción hacia personas sin importar su género o identidad de género (pansexual), entre otras posibilidades.
+                    <br><strong>Es importante destacar que la orientación sexual no determina la identidad de género, ni viceversa.</strong>
+                </p>
+            </div>
+            <div class="card-image-container">
+                <img src="img/orientacion.jpg" alt="Identidad de Género" class="card-image">
+            </div>
+        </div>
+        
+        <!-- Card 3 -->
+        <div class="card">
+            <div class="card-content">
+                <h2 class="card-title" style="color: var(--orange);">Derechos LGBTIQ+</h2>
+                <p class="card-text">Los derechos LGBTIQ+ son derechos humanos. Todas las personas, independientemente de su orientación sexual, 
+                    identidad de género o características sexuales, tienen <strong> derecho a vivir libres de violencia, persecución, discriminación y estigma </strong>. 
+                    Estos derechos incluyen el acceso a la salud, educación, trabajo, justicia y participación política.
+                </p>
+            </div>
+            <div class="card-image-container">
+                <img src="img/derechos.png" alt="Derechos LGBTQI+" class="card-image">
+            </div>
+        </div>
+        
+        <!-- Card 4 -->
+        <div class="card">
+            <div class="card-content">
+                <h2 class="card-title" style="color: var(--violet);">¿Qué es la Violencia Simbólica y Estructural?</h2>
+                <p class="card-text">La violencia simbólica se manifiesta a través de los mensajes, valores, signos y prácticas que <strong> reproducen desigualdades, naturalizando
+                    la exclusión o invisibilización de ciertos grupos</strong>. En las instituciones educativas, esta violencia puede expresarse mediante el uso del lenguaje,
+                    los contenidos curriculares, la falta de representación o el trato despectivo hacia personas cuya identidad de género o sexualidad no responde a la norma. <br>
+                    La violencia estructural, por su parte, se refiere a formas sistemáticas de desigualdad que están integradas en las instituciones sociales, como la
+                    educación, la salud o el trabajo. Esta violencia puede limitar el acceso a derechos, recursos y oportunidades para las personas LGBTIQ+.
+                </p>
+            </div>
+            <div class="card-image-container">
+                <img src="img/bulling.jpg" alt="Salud Integral" class="card-image">
+            </div>
+        </div>
+        
+        <!-- Card 5 -->
+        <div class="card">
+            <div class="card-content">
+                <h2 class="card-title" style="color: var(--green)">¿Qué es la Educación Inclusiva?</h2>
+                <p class="card-text">La educación inclusiva <strong> busca garantizar el acceso, la participación y el aprendizaje de todas las personas, respetando sus particularidades y
+                    promoviendo el derecho a la diferencia</strong>. Este enfoque reconoce que cada estudiante tiene trayectorias, identidades y contextos diversos, y propone
+                    transformar las instituciones para que respondan a esa diversidad. <br>
+                    Una educación inclusiva no solo incorpora a estudiantes diversos, sino que transforma activamente las condiciones que generan exclusión o discriminación.
+                </p>
+            </div>
+            <div class="card-image-container">
+                <img src="img/inclusivo.webp" alt="Cultura y Arte" class="card-image">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Rainbow Divider -->
+<div class="rainbow-divider"></div>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-main">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <span class="footer-brand-name">DiversaMente</span>
+                </div>
+                <p class="footer-description">Una plataforma informativa y de apoyo para la comunidad LGBTIQ+ y sus aliados.</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2025 DiversaMente. Todos los derechos reservados.</p>
+            <div class="footer-links">
+                <a href="#">Política de Privacidad</a>
+                <a href="#">Términos de Servicio</a>
+                <a href="#">Contacto</a>
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon" id="themeIcon"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
